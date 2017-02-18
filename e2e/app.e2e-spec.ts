@@ -1,14 +1,14 @@
-import { BastaDemoPage } from './app.po';
+import {BastaDemoPage} from './app.po';
 
 describe('basta-demo App', () => {
-  let page: BastaDemoPage;
+    let page: BastaDemoPage;
 
-  beforeEach(() => {
-    page = new BastaDemoPage();
-  });
+    beforeEach(() => {
+        page = new BastaDemoPage();
+    });
 
-  it('should display message saying app works', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
-  });
+    it('should display message saying app works', () => {
+        page.navigateTo();
+        expect(page.getParagraphText()).toEqual('app works!');
+    });
 });
