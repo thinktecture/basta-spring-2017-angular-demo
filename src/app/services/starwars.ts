@@ -10,8 +10,8 @@ export class StarwarsService {
     constructor(private _http: Http) {
     }
 
-    public list(page: number = 1): Observable<Array<StarwarsPeople>> {
-        return this._http.get(`${this._baseUrl}/people?page=${page}`)
+    public list(): Observable<Array<StarwarsPeople>> {
+        return this._http.get(`${this._baseUrl}/people`)
             .map((response: Response) => response.json())
             .map(json => json.results);
     }

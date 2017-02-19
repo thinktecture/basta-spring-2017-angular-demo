@@ -2,7 +2,7 @@
 
 <table class="table table-striped" *ngIf="people">
     <tr>
-        <th>Key</th>
+        <th class="w-25">Key</th>
         <th>Value</th>
     </tr>
     <tr>
@@ -23,3 +23,10 @@
     </tr>
 
 </table>
+
+<div class="row">
+    <div class="col-md-12 justify-content-between d-flex">
+        <button class="btn btn-primary" (click)="previous()">Previous</button>
+        <button class="btn btn-primary " (click)="next()">Next</button>
+    </div>
+</div>
