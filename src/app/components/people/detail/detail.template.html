@@ -1,0 +1,32 @@
+<h1>People Detail</h1>
+
+<table class="table table-striped" *ngIf="people">
+    <tr>
+        <th class="w-50">Key</th>
+        <th>Value</th>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>{{ people.name }}</td>
+    </tr>
+    <tr>
+        <td>Birth Year</td>
+        <td>{{ people.birth_year }}</td>
+    </tr>
+    <tr>
+        <td>Hair Color</td>
+        <td>{{ people.hair_color}}</td>
+    </tr>
+    <tr>
+        <td>Gender</td>
+        <td>{{ people.gender }}</td>
+    </tr>
+
+</table>
+
+<div class="row">
+    <div class="col-md-12 justify-content-between d-flex">
+        <button class="btn btn-primary" (click)="previous()">Previous</button>
+        <button class="btn btn-primary" (click)="next()">Next</button>
+    </div>
+</div>

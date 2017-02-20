@@ -5,22 +5,30 @@ import {HttpModule} from '@angular/http';
 
 import {AppComponent} from './components/app/app';
 import {NavigationComponent} from './components/navigation/navigation';
+import {RouterModule} from '@angular/router';
+import {ROUTES} from './routes';
 import {HomeComponent} from './components/home/home';
+import {PeopleListComponent} from './components/people/list/list';
+import {StarwarsService} from './services/starwars';
+import {PeopleDetailComponent} from './components/people/detail/detail';
 
 @NgModule({
     declarations: [
         AppComponent,
         NavigationComponent,
-        HomeComponent
+        HomeComponent,
+        PeopleListComponent,
+        PeopleDetailComponent
     ],
     imports: [
         BrowserModule,
         FormsModule,
-        HttpModule
-
-        // TODO: Implement hash-based routing
+        HttpModule,
+        RouterModule.forRoot(ROUTES, { useHash: true })
     ],
-    providers: [],
+    providers: [
+        StarwarsService
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {
