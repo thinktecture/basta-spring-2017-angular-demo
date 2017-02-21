@@ -1,5 +1,7 @@
 # basta-spring-2017-angular-demo
 
+Slides for this talk can be found on [Speakerdeck](https://speakerdeck.com/manuelrauber/angular-2-komponentenbasierte-html5-anwendungen-die-plattform).
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-beta.32.3.
 
 ## Development server
